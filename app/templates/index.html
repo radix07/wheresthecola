@@ -1,0 +1,36 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/fixes.html" as fixes %}
+{% import "bootstrap/utils.html" as util %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='cascade.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Where's the Cola?</h1>
+  What do your favorite places have to drink? Coke or Pepsi? Now you can know.
+    <table class="table table-striped table-hover ">
+      <thead>
+        <th>Location</th>
+        <th>Cola</th>
+      </thead>
+        <tbody>
+        {% for row_index in range(x|count) %}
+            <tr> <!-- class="danger"-->
+              <td><b>{{ x[row_index][0]}}</b></td>
+              <td>{{ x[row_index][1] }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block head %}
+{{super()}}
+{{fixes.ie8()}}
+{% endblock %}

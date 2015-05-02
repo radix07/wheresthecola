@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet"
+      href="/static/cascade.css">
+
+
+<!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+  </head>
+  <body>
+    
+    
+<div class="container">
+  <h1>Where's the Cola?</h1>
+  
+    <table class="table table-striped table-hover ">
+      <thead>
+        <th>Location</th>
+        <th>Cola</th>
+      </thead>
+        <tbody> 
+        
+            <tr> <!-- class="danger"-->
+              <td>Mc Donalds</td>
+              <td>Coke</td>
+            </tr>
+        
+            <tr> <!-- class="danger"-->
+              <td>Burger King</td>
+              <td>Pepsi</td>
+            </tr>
+        
+            <tr> <!-- class="danger"-->
+              <td>Wendy&#39;s</td>
+              <td>Coke</td>
+            </tr>
+        
+        </tbody>
+    </table> 
+    <!--tojson|safe 
+  <h2>This is the sample form (basic)</h2>
+  
+<form method="post"
+  class="form" role="form">
+  <div style="display:none;"><input id="csrf_token" name="csrf_token" type="hidden" value="20150501160650##2d0543218be3f478fa5e38a6724c1b9f1e607428"><input id="hidden_field" name="hidden_field" type="hidden" value=""></div>
+  
+    
+    
+
+
+
+
+<div class="form-group "><label class="control-label" for="field1">First Field</label>
+        <input class="form-control" id="field1" name="field1" type="text" value=""><p class="help-block">This is field one.</p>
+  </div>
+
+
+    
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="field2">Second Field</label>
+        <input class="form-control" id="field2" name="field2" required type="text" value=""><p class="help-block">This is field two.</p>
+  </div>
+
+
+    
+    
+
+
+
+
+<div class="form-group "><label class="control-label" for="recaptcha">A sample recaptcha field</label>
+        
+<script type="text/javascript">var RecaptchaOptions = {"theme": "clean", "custom_translations": {"incorrect_try_again": "Incorrect. Try again.", "help_btn": "Help", "cant_hear_this": "Download sound as MP3", "instructions_audio": "Type what you hear:", "instructions_visual": "Type the two words:", "refresh_btn": "Get a new challenge", "play_again": "Play sound again", "visual_challenge": "Get a visual challenge", "audio_challenge": "Get an audio challenge"}};</script>
+<script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw"></script>
+<noscript>
+  <div><iframe src="http://api.recaptcha.net/noscript?k=6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw" height="300" width="500"></iframe></div>
+  <div><textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  <input type="hidden" name="recaptcha_response_field" value="manual_challenge"></div>
+</noscript>
+
+  </div>
+
+
+    
+
+
+
+
+
+  
+
+
+    <div class="radio">
+        <label>
+          <input id="radio_field-0" name="radio_field" type="radio" value="head_radio"> Head radio
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-1" name="radio_field" type="radio" value="radio_76fm"> Radio '76 FM
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-2" name="radio_field" type="radio" value="lips_106"> Lips 106
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-3" name="radio_field" type="radio" value="wctr"> WCTR
+        </label>
+      </div>
+    
+  
+
+
+
+
+    
+
+
+
+
+
+  
+
+
+    <div class="checkbox">
+      <label>
+        <input id="checkbox_field" name="checkbox_field" type="checkbox" value="y"> This is a checkbox
+      </label>
+    </div>
+  
+
+
+
+
+    
+
+
+
+
+
+  <fieldset>
+    <legend><label for="mobile_phone">Mobile Phone</label></legend>
+      
+      
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="mobile_phone-country_code">Country Code</label>
+        <input class="form-control" id="mobile_phone-country_code" name="mobile_phone-country_code" required type="text" value="">
+  </div>
+
+
+      
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="mobile_phone-area_code">Area Code/Exchange</label>
+        <input class="form-control" id="mobile_phone-area_code" name="mobile_phone-area_code" required type="text" value="">
+  </div>
+
+
+      
+
+
+
+
+<div class="form-group "><label class="control-label" for="mobile_phone-number">Number</label>
+        <input class="form-control" id="mobile_phone-number" name="mobile_phone-number" type="text" value="">
+  </div>
+
+
+  </fieldset>
+
+
+    
+
+
+
+
+
+  <fieldset>
+    <legend><label for="office_phone">Your office phone</label></legend>
+      
+      
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="office_phone-country_code">Country Code</label>
+        <input class="form-control" id="office_phone-country_code" name="office_phone-country_code" required type="text" value="">
+  </div>
+
+
+      
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="office_phone-area_code">Area Code/Exchange</label>
+        <input class="form-control" id="office_phone-area_code" name="office_phone-area_code" required type="text" value="">
+  </div>
+
+
+      
+
+
+
+
+<div class="form-group "><label class="control-label" for="office_phone-number">Number</label>
+        <input class="form-control" id="office_phone-number" name="office_phone-number" type="text" value="">
+  </div>
+
+
+  </fieldset>
+
+
+    
+
+
+
+
+
+  
+
+
+    <input class="btn btn-primary" id="submit_button" name="submit_button" type="submit" value="Submit Form">
+  
+
+
+
+
+
+</form>
+
+  <h2>The same form, inline</h2>
+  
+<form method="post"
+  class="form form-inline" role="form">
+  <div style="display:none;"><input id="csrf_token" name="csrf_token" type="hidden" value="20150501160650##2d0543218be3f478fa5e38a6724c1b9f1e607428"><input id="hidden_field" name="hidden_field" type="hidden" value=""></div>
+  
+    
+    
+
+
+
+
+<div class="form-group ">
+        <label class="sr-only" for="field1">First Field</label>
+        
+          <input class="form-control" id="field1" name="field1" type="text" value="">
+        
+      
+  </div>
+
+
+    
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="sr-only" for="field2">Second Field</label>
+        
+          <input class="form-control" id="field2" name="field2" required type="text" value="">
+        
+      
+  </div>
+
+
+    
+    
+
+
+
+
+<div class="form-group ">
+        <label class="sr-only" for="recaptcha">A sample recaptcha field</label>
+        
+          
+<script type="text/javascript">var RecaptchaOptions = {"theme": "clean", "custom_translations": {"incorrect_try_again": "Incorrect. Try again.", "help_btn": "Help", "cant_hear_this": "Download sound as MP3", "instructions_audio": "Type what you hear:", "instructions_visual": "Type the two words:", "refresh_btn": "Get a new challenge", "play_again": "Play sound again", "visual_challenge": "Get a visual challenge", "audio_challenge": "Get an audio challenge"}};</script>
+<script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw"></script>
+<noscript>
+  <div><iframe src="http://api.recaptcha.net/noscript?k=6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw" height="300" width="500"></iframe></div>
+  <div><textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  <input type="hidden" name="recaptcha_response_field" value="manual_challenge"></div>
+</noscript>
+
+        
+      
+  </div>
+
+
+    
+
+
+
+
+
+  
+
+
+    <div class="radio">
+        <label>
+          <input id="radio_field-0" name="radio_field" type="radio" value="head_radio"> Head radio
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-1" name="radio_field" type="radio" value="radio_76fm"> Radio '76 FM
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-2" name="radio_field" type="radio" value="lips_106"> Lips 106
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-3" name="radio_field" type="radio" value="wctr"> WCTR
+        </label>
+      </div>
+    
+  
+
+
+
+
+    
+
+
+
+
+
+  
+
+
+    <div class="checkbox">
+      <label>
+        <input id="checkbox_field" name="checkbox_field" type="checkbox" value="y"> This is a checkbox
+      </label>
+    </div>
+  
+
+
+
+
+    
+
+
+
+
+
+  <fieldset>
+    <legend><label for="mobile_phone">Mobile Phone</label></legend>
+      
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="sr-only" for="mobile_phone-country_code">Country Code</label>
+        
+          <input class="form-control" id="mobile_phone-country_code" name="mobile_phone-country_code" required type="text" value="">
+        
+      
+  </div>
+
+
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="sr-only" for="mobile_phone-area_code">Area Code/Exchange</label>
+        
+          <input class="form-control" id="mobile_phone-area_code" name="mobile_phone-area_code" required type="text" value="">
+        
+      
+  </div>
+
+
+      
+
+
+
+
+<div class="form-group ">
+        <label class="sr-only" for="mobile_phone-number">Number</label>
+        
+          <input class="form-control" id="mobile_phone-number" name="mobile_phone-number" type="text" value="">
+        
+      
+  </div>
+
+
+  </fieldset>
+
+
+    
+
+
+
+
+
+  <fieldset>
+    <legend><label for="office_phone">Your office phone</label></legend>
+      
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="sr-only" for="office_phone-country_code">Country Code</label>
+        
+          <input class="form-control" id="office_phone-country_code" name="office_phone-country_code" required type="text" value="">
+        
+      
+  </div>
+
+
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="sr-only" for="office_phone-area_code">Area Code/Exchange</label>
+        
+          <input class="form-control" id="office_phone-area_code" name="office_phone-area_code" required type="text" value="">
+        
+      
+  </div>
+
+
+      
+
+
+
+
+<div class="form-group ">
+        <label class="sr-only" for="office_phone-number">Number</label>
+        
+          <input class="form-control" id="office_phone-number" name="office_phone-number" type="text" value="">
+        
+      
+  </div>
+
+
+  </fieldset>
+
+
+    
+
+
+
+
+
+  
+
+
+    <input class="btn btn-primary" id="submit_button" name="submit_button" type="submit" value="Submit Form">
+  
+
+
+
+
+
+</form>
+
+  <h2>And as a horizontal form</h2>
+  
+<form method="post"
+  class="form form-horizontal" role="form">
+  <div style="display:none;"><input id="csrf_token" name="csrf_token" type="hidden" value="20150501160650##2d0543218be3f478fa5e38a6724c1b9f1e607428"><input id="hidden_field" name="hidden_field" type="hidden" value=""></div>
+  
+    
+    
+
+
+
+
+<div class="form-group ">
+        <label class="control-label  col-lg-2" for="field1">First Field</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="field1" name="field1" type="text" value="">
+          
+        </div>
+
+  
+  <div class="col-lg-offset-2
+              col-lg-10
+             ">
+
+
+            <p class="help-block">This is field one.</p>
+          
+
+
+  
+  </div>
+
+
+  </div>
+
+
+    
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="control-label  col-lg-2" for="field2">Second Field</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="field2" name="field2" required type="text" value="">
+          
+        </div>
+
+  
+  <div class="col-lg-offset-2
+              col-lg-10
+             ">
+
+
+            <p class="help-block">This is field two.</p>
+          
+
+
+  
+  </div>
+
+
+  </div>
+
+
+    
+    
+
+
+
+
+<div class="form-group ">
+        <label class="control-label  col-lg-2" for="recaptcha">A sample recaptcha field</label>
+        <div class=" col-lg-10">
+          
+            
+<script type="text/javascript">var RecaptchaOptions = {"theme": "clean", "custom_translations": {"incorrect_try_again": "Incorrect. Try again.", "help_btn": "Help", "cant_hear_this": "Download sound as MP3", "instructions_audio": "Type what you hear:", "instructions_visual": "Type the two words:", "refresh_btn": "Get a new challenge", "play_again": "Play sound again", "visual_challenge": "Get a visual challenge", "audio_challenge": "Get an audio challenge"}};</script>
+<script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw"></script>
+<noscript>
+  <div><iframe src="http://api.recaptcha.net/noscript?k=6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw" height="300" width="500"></iframe></div>
+  <div><textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  <input type="hidden" name="recaptcha_response_field" value="manual_challenge"></div>
+</noscript>
+
+          
+        </div>
+  </div>
+
+
+    
+
+
+
+
+
+  
+
+  <div class="form-group">
+  <div class="col-lg-offset-2
+              col-lg-10
+             ">
+
+
+    <div class="radio">
+        <label>
+          <input id="radio_field-0" name="radio_field" type="radio" value="head_radio"> Head radio
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-1" name="radio_field" type="radio" value="radio_76fm"> Radio '76 FM
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-2" name="radio_field" type="radio" value="lips_106"> Lips 106
+        </label>
+      </div>
+    <div class="radio">
+        <label>
+          <input id="radio_field-3" name="radio_field" type="radio" value="wctr"> WCTR
+        </label>
+      </div>
+    
+  
+
+
+  </div>
+  </div>
+
+
+
+    
+
+
+
+
+
+  
+
+  <div class="form-group">
+  <div class="col-lg-offset-2
+              col-lg-10
+             ">
+
+
+    <div class="checkbox">
+      <label>
+        <input id="checkbox_field" name="checkbox_field" type="checkbox" value="y"> This is a checkbox
+      </label>
+    </div>
+  
+
+
+  </div>
+  </div>
+
+
+
+    
+
+
+
+
+
+  <fieldset>
+    <legend><label for="mobile_phone">Mobile Phone</label></legend>
+      
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="control-label  col-lg-2" for="mobile_phone-country_code">Country Code</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="mobile_phone-country_code" name="mobile_phone-country_code" required type="text" value="">
+          
+        </div>
+  </div>
+
+
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="control-label  col-lg-2" for="mobile_phone-area_code">Area Code/Exchange</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="mobile_phone-area_code" name="mobile_phone-area_code" required type="text" value="">
+          
+        </div>
+  </div>
+
+
+      
+
+
+
+
+<div class="form-group ">
+        <label class="control-label  col-lg-2" for="mobile_phone-number">Number</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="mobile_phone-number" name="mobile_phone-number" type="text" value="">
+          
+        </div>
+  </div>
+
+
+  </fieldset>
+
+
+    
+
+
+
+
+
+  <fieldset>
+    <legend><label for="office_phone">Your office phone</label></legend>
+      
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="control-label  col-lg-2" for="office_phone-country_code">Country Code</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="office_phone-country_code" name="office_phone-country_code" required type="text" value="">
+          
+        </div>
+  </div>
+
+
+      
+
+
+
+
+
+
+<div class="form-group  required">
+        <label class="control-label  col-lg-2" for="office_phone-area_code">Area Code/Exchange</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="office_phone-area_code" name="office_phone-area_code" required type="text" value="">
+          
+        </div>
+  </div>
+
+
+      
+
+
+
+
+<div class="form-group ">
+        <label class="control-label  col-lg-2" for="office_phone-number">Number</label>
+        <div class=" col-lg-10">
+          
+            <input class="form-control" id="office_phone-number" name="office_phone-number" type="text" value="">
+          
+        </div>
+  </div>
+
+
+  </fieldset>
+
+
+    
+
+
+
+
+
+  
+
+  <div class="form-group">
+  <div class="col-lg-offset-2
+              col-lg-10
+             ">
+
+
+    <input class="btn btn-primary" id="submit_button" name="submit_button" type="submit" value="Submit Form">
+  
+
+
+  </div>
+  </div>
+
+
+
+
+</form>
+  -->
+</div>
+
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
