@@ -16,4 +16,4 @@ app = create_app()
 #app.run(debug=True)
 #app.run(debug=False)
 
-app.run(use_reloader=False)
+app.run()
