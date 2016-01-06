@@ -6,6 +6,7 @@
 import os
 import sys
 from flask.ext.frozen import Freezer
+from flask.ext.assets import Environment,Bundle
 
 sys.path.append(os.path.dirname(__name__))
 
@@ -18,4 +19,11 @@ app = create_app()
 freezer = Freezer(app)
 
 if __name__ == '__main__':
+    """ Builds this site.
+    """
+    print("Building website...")
+    app.debug = False
+    app.testing = True
+    #asset_manager.config['ASSETS_DEBUG'] = False
     freezer.freeze()
+    print("Done.")

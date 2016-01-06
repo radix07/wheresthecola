@@ -69,7 +69,7 @@ def create_app(configfile=None):
         #build up database table to send to index
         data = {}
 	try:
-		execfile("app\\data.py",data)
+		execfile("app/data.py",data)
 	except:
 		execfile("data.py",data)
         #print data

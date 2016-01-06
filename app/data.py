@@ -16,7 +16,7 @@ Table = {
         "Mc Donald's":0,
         "Applebee's":1,
         "Hooter's":3,
-        "IHOP":4,
+        "IHOP":1,
         "Chick-fil-A":4,
         "Panera":1,
         "Chipotle":1,
@@ -72,9 +72,7 @@ Table = {
         "Maid-Rite":1,
         "Old Chicago":1,
         "Wendy's":0,
-        "":4,
-        "":4,"":4,
-        "":4,
+        #"":4, "":4,"":4, "":4,
         },
         
     "Beverage":["Coke","Pepsi","Dr. Pepper","Mix","Unknown","None"]
