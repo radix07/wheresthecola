@@ -1,6 +1,5 @@
 # -*- mode: python -*-
 a = Analysis(['run_app.py'],
-             #pathex=['E:\\_Engineering\\WebServer\\webPgSicom\\webPgSicom'],
              hiddenimports=[ 
 				 "flask",
 				 "flask.views",
