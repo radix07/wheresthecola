@@ -3,10 +3,10 @@
 # however since it is not bundled in the sdist package, we need some hacks
 # to make it work
 
-import os
-import sys
+#import os
+#import sys
 
-sys.path.append(os.path.dirname(__name__))
+#sys.path.append(os.path.dirname(__name__))
 
 from app import create_app
 
