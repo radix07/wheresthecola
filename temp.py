@@ -17,18 +17,15 @@ def index():
         execfile("app/data.py",data)
     except:
         execfile("data.py",data)
-        
     bevLU = data["Table"]["Beverage"]
     list =[]
-    
     for key, value in data["Table"]["Location"].iteritems():
         temp = bevLU[int(value)]
         list += [[key,temp]]
     print list
-    
     return render_template('index.html', x = list)
     
 
-if __name__ == '__main__':
-    create_app().run()
+#if __name__ == '__main__':
+    #create_app().run()
     #create_app().run(debug=True)
