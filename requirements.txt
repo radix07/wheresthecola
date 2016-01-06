@@ -14,4 +14,4 @@ Flask-Migrate==1.2.0
 Flask-Bootstrap==3.3.2.1
 flask-appconfig==0.9.1
 Flask-WTF==0.8.4
-WTForms==1.0.5
+_WTForms==1.0.5
